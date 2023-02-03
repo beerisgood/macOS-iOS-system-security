@@ -12,7 +12,8 @@ https://talosintelligence.com/vulnerability_reports#disclosed
 
 CVE|modules|POC/writeup link|
 ------------------|----------------|----------------|
-CVE-2015-????|Kernel|https://github.com/kpwn/tpwn<br>http://nirvan.360.cn/blog/?p=469|
+CVE-2014-8826|LaunchServices|https://www.ampliasecurity.com/advisories/os-x-gatekeeper-bypass-vulnerability.html|
+CVE-2015-????|Kernel|https://github.com/kpwn/tpwn|
 CVE-2016-????|XPC|https://marcograss.github.io/security/apple/xpc/2016/06/17/containermanagerd-xpc-array-oob.html|
 CVE-2016-1758&CVE-2016-1828|Kernel|https://bazad.github.io/2016/05/mac-os-x-use-after-free/
 CVE-2016-1824|IOHIDFamily|https://marcograss.github.io/security/apple/cve/2016/05/16/cve-2016-1824-apple-iohidfamily-racecondition.html|
@@ -38,11 +39,13 @@ CVE-2018-4415|CoreAnimation|https://ssd-disclosure.com/ssd-advisory-ios-macos-sa
 CVE-2018-4431|Kernel|https://ssd-disclosure.com/ssd-advisory-ios-macos-kernel-task_inspect-information-leak/
 CVE-2019-6225|Kernel|https://blogs.360.cn/post/IPC%20Voucher%20UaF%20Remote%20Jailbreak%20Stage%202.html<br>https://googleprojectzero.blogspot.com/2019/08/in-wild-ios-exploit-chain-5.html<br>https://googleprojectzero.blogspot.com/2019/01/voucherswap-exploiting-mig-reference.html<br>http://highaltitudehacks.com/2020/06/01/from-zero-to-tfp0-part-1-prologue/<br>http://highaltitudehacks.com/2020/06/01/from-zero-to-tfp0-part-2-a-walkthrough-of-the-voucher-swap-exploit/|
 CVE-2019-6231|CoreAnimation|https://www.fortinet.com/blog/threat-research/detailed-analysis-of-macos-ios-vulnerability-cve-2019-6231|
+CVE-2019–6238|xar|https://yilmazcanyigit.medium.com/cve-2019-6238-apple-xar-directory-traversal-vulnerability-9a32ba8b3b7d|
 CVE-2019-8507|CoreAnimation|https://www.fortinet.com/blog/threat-research/detailed-analysis-mac-os-vulnerability-cve-2019-8507|
 CVE-2019-8549|Power Management|https://ssd-disclosure.com/ssd-advisory-ios-powerd-uninitialized-mach-message-reply-to-sandbox-escape-and-privilege-escalation/
 CVE-2019-8561|PackageKit|https://0xmachos.com/2021-04-30-CVE-2019-8561-PoC//
 CVE-2019-8605|Kernel|https://googleprojectzero.blogspot.com/2019/12/sockpuppet-walkthrough-of-kernel.html<br>https://github.com/jakeajames/sock_port<br>http://blog.asm.im/2019/11/17/Sock-Port-%E6%BC%8F%E6%B4%9E%E8%A7%A3%E6%9E%90%EF%BC%88%E4%B8%80%EF%BC%89UAF-%E4%B8%8E-Heap-Spraying/<br>http://blog.asm.im/2019/11/24/Sock-Port-%E6%BC%8F%E6%B4%9E%E8%A7%A3%E6%9E%90%EF%BC%88%E4%BA%8C%EF%BC%89%E9%80%9A%E8%BF%87-Mach-OOL-Message-%E6%B3%84%E9%9C%B2-Port-Address/<br>http://blog.asm.im/2019/12/01/Sock-Port-%E6%BC%8F%E6%B4%9E%E8%A7%A3%E6%9E%90%EF%BC%88%E4%B8%89%EF%BC%89IOSurface-Heap-Spraying/<br>http://blog.asm.im/2019/12/08/Sock-Port-%E6%BC%8F%E6%B4%9E%E8%A7%A3%E6%9E%90%EF%BC%88%E5%9B%9B%EF%BC%89The-tfp0/|
 CVE-2019-8635|AMD|https://www.trendmicro.com/en_us/research/19/f/cve-2019-8635-double-free-vulnerability-in-apple-macos-lets-attackers-escalate-system-privileges-and-execute-arbitrary-code.html|
+CVE-2019-8656|autofs|https://www.fcvl.net/vulnerabilities/macosx-gatekeeper-bypass|
 CVE-2019-8761|UIFoundation|https://www.paulosyibelo.com/2021/04/this-man-thought-opening-txt-file-is.html|
 CVE-2019-8794&CVE-2019-8795&CVE-2019-8797|Kernel&AVEVideoEncoder&Audio|https://ssd-disclosure.com/ssd-advisory-via-ios-jailbreak-sandbox-escape-and-kernel-r-w-leading-to-rce/
 CVE-2020-3847&CVE-2020-3848|CoreBluetooth|https://blogs.360.cn/post/macOS_Bluetoothd_0-click.html|
@@ -70,6 +73,7 @@ CVE-2021-1740&CVE-2021-30855&CVE-2021-30995|Preferences|https://jhftss.github.io
 CVE-2021-1747|CoreAudio|https://mp.weixin.qq.com/s/9dmQH4qIw95Gsx92wLSr6w|
 CVE-2021-1757|IOSkywalkFamily|https://github.com/b1n4r1b01/n-days/tree/main/CVE-2021-1757|
 CVE-2021-1782|Kernel|https://github.com/ModernPwner/cicuta_virosa<br>https://www.synacktiv.com/publications/analysis-and-exploitation-of-the-ios-kernel-vulnerability-cve-2021-1782|
+CVE-2021-1810|Archive Utility|https://labs.withsecure.com/publications/the-discovery-of-cve-2021-1810<br>https://labs.withsecure.com/publications/analysis-of-cve-2021-1810-gatekeeper-bypass|
 CVE-2021-1815|Preferences|https://www.offensive-security.com/offsec/macos-preferences-priv-escalation/|
 CVE-2021-30655|Wi-Fi|https://wojciechregula.blog/post/press-5-keys-and-become-root-aka-cve-2021-30655/|
 CVE-2021-30657|System Preferences|https://objective-see.com/blog/blog_0x64.html|
@@ -97,12 +101,30 @@ CVE-2022-22582|xar|https://research.nccgroup.com/2022/03/15/technical-advisory-a
 CVE-2022-22616|Safari Downloads|https://jhftss.github.io/CVE-2022-22616-Gatekeeper-Bypass/|
 CVE-2022-22639|SoftwareUpdate|https://www.trendmicro.com/en_us/research/22/d/macos-suhelper-root-privilege-escalation-vulnerability-a-deep-di.html|
 CVE-2022-22660|System Preferences|https://rambo.codes/posts/2022-03-15-how-a-macos-bug-could-have-allowed-for-a-serious-phishing-attack-against-users|
+CVE-2022-26696|Terminal|https://wojciechregula.blog/post/macos-sandbox-escape-via-terminal/|
 CVE-2022-26706|LaunchServices|https://www.microsoft.com/security/blog/2022/07/13/uncovering-a-macos-app-sandbox-escape-vulnerability-a-deep-dive-into-cve-2022-26706/|
 CVE-2022-26712|PackageKit|https://jhftss.github.io/CVE-2022-26712-The-POC-For-SIP-Bypass-Is-Even-Tweetable/|
+CVE-2022-26743|Kernel|https://pwning.systems/posts/easy-apple-kernel-bug/|
+CVE-2022-26766&CVE-2022-26763|CoreTrust&DriverKit|https://worthdoingbadly.com/coretrust/|
 CVE-2022-32787|ICU|https://ssd-disclosure.com/ssd-advisory-apple-safari-icu-out-of-bounds-write/|
 CVE-2022-32816|WebKit|https://ssd-disclosure.com/ssd-advisory-apple-safari-idn-url-spoofing/|
 CVE-2022-32832|APFS|https://github.com/Muirey03/CVE-2022-32832|
+CVE-2022-32883|Maps|https://github.com/breakpointHQ/CVE-2022-32883|
+CVE-2022-32895|PackageKit|https://www.trendmicro.com/en_us/research/22/k/cve-2019-8561-a-hard-to-banish-packagekit-framework-vulnerabilit.html|
+CVE-2022-32910|Archive Utility|https://www.jamf.com/blog/jamf-threat-labs-macos-archive-utility-vulnerability/|
+CVE-2022-32929|Backup|https://theevilbit.github.io/posts/cve-2022-32929/|
+CVE-2022-32845&CVE-2022-32899&CVE-2022-32948&CVE-2022-42805|Apple Neural Engine|https://github.com/0x36/weightBufs|
+CVE-2022-32898|Apple Neural Engine|https://0x36.github.io/CVE-2022-32898/|
+CVE-2022-32932|Apple Neural Engine|https://0x36.github.io/CVE-2022-32932/|
+CVE-2022-42821|Gatekeeper|https://www.microsoft.com/en-us/security/blog/2022/12/19/gatekeepers-achilles-heel-unearthing-a-macos-vulnerability/|
+CVE-2022-42837|iTunes Store|https://www.anquanke.com/post/id/284452|
+CVE-2022-42841|PackageKit|https://sector7.computest.nl/post/2023-01-xar/|
+CVE-2022-42845|Kernel|https://adamdoupe.com/blog/2022/12/13/cve-2022-42845-xnu-use-after-free-vulnerability-in-ndrv-dot-c/|
+CVE-2022-42864|IOHIDFamily|https://muirey03.blogspot.com/2023/01/cve-2022-42864-diabolical-cookies.html|
+CVE-2022-46689|Kernel|https://github.com/zhuowei/MacDirtyCowDemo|
+CVE-2023-23504|Kernel|https://adamdoupe.com/blog/2023/01/23/cve-2023-23504-xnu-heap-underwrite-in-dlil-dot-c/|
 multiple|lock screen bypass|https://blog.dinosec.com/2014/09/bypassing-ios-lock-screens.html|
+
 
 <h3 id="p">tools</h3>
 
@@ -117,6 +139,10 @@ Dyld Shared Cache Support for BinaryNinja:
 iOS/MacOS Kernelcache/Extensions analysis tool:
 
 [https://github.com/lilang-wu/p-joker](https://github.com/lilang-wu/p-joker)
+
+Extract Binaries from Apple's Dyld Shared Cache:
+
+[https://github.com/arandomdev/DyldExtractor](https://github.com/arandomdev/DyldExtractor)
 
 static analysis tool for analyzing the security of Apple kernel drivers:
 
@@ -192,9 +218,13 @@ CanSecWest 2017|[Port(al) to the iOS Core](https://www.slideshare.net/i0n1c/cans
 CSS 2019|[如何批量挖掘macOS/iOS内核信息泄漏漏洞](https://github.com/maldiohead/Slides/blob/main/Batch_find_macO_iOS_kernel_info_leak.pdf)|
 defcon26|[Attacking the macOS Kernel Graphics Driver](https://github.com/keenjoy95/defcon-26/blob/master/Attacking%20the%20macOS%20Kernel%20Graphics%20Driver.pdf)|
 defcon29|[Caught you - reveal and exploit IPC logic bugs inside Apple](https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Zhipeng%20Huo%20Yuebin%20Sun%20Chuanda%20Ding%20-%20Caught%20you%20-%20reveal%20and%20exploit%20IPC%20logic%20bugs%20inside%20Apple.pdf)|
+hexacon2022|[Cinema time!](https://github.com/isciurus/hexacon2022_AppleAVD/blob/main/hexacon2022_AppleAVD.pdf)|
+hexacon2022|[More Tales from the iOS/macOS Kernel Trenches](https://github.com/potmdehex/slides/blob/main/Hexacon_2022_More_Tales_from_the_iOS_macOS_Kernel_Trenches.pdf)|
+hexacon2022|[Attacking Safari in 2022](https://www.hexacon.fr/slides/attacking_safari_in_2022_slides.pdf)|
 HITB AMS 2021|[macOS local security:escaping the sandbox and bypassing TCC](https://conference.hitb.org/hitbsecconf2021ams/materials/D1T1%20-%20MacOS%20Local%20Security%20-%20Escaping%20the%20Sandbox%20and%20Bypassing%20TCC%20-%20Thijs%20Alkemade%20&%20Daan%20Keuper.pdf)|
 HITB GSEC 2019|[Recreating an iOS 0-day jailbreak out of Apple’s security patches](https://gsec.hitb.org/materials/sg2019/D2%20-%20Recreating%20an%20iOS%200day%20Jailbreak%20Out%20of%20Apple%E2%80%99s%20Security%20Updates%20-%20Stefan%20Esser.pdf)|
 HITB SIN 2022|[One-Click to Completely Take Over A macOS Device](https://conference.hitb.org/hitbsecconf2022sin/materials/D1T1%20-%20One-Click%20to%20Completely%20Takeover%20a%20MacOS%20Device%20-%20Mickey%20Jin.pdf)|
+ISC 2017|[手把手教你突破 iOS 9.x 用户空间防护](https://images.seebug.org/archive/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%AA%81%E7%A0%B4iOS9.x%E7%9A%84%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4%E9%98%B2%E6%8A%A4.pdf)|
 mch2022|[My journey to find vulnerabilities in macOS](https://media.ccc.de/v/mch2022-291-my-journey-to-find-vulnerabilities-in-macos)|
 Objective by the Sea|[https://objectivebythesea.com/](https://objectivebythesea.com/)|
 syscan360 2016|[Memory corruption is for wusies!](https://papers.put.as/papers/macosx/2016/SyScan360_SG_2016_-_Memory_Corruption_is_for_wussies.pdfhttps://media.ccc.de/v/mch2022-291-my-journey-to-find-vulnerabilities-in-macos)|
