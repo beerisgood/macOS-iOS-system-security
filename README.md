@@ -100,6 +100,7 @@ CVE-2021-30990|LaunchServices|https://ronmasas.com/posts/bypass-macos-gatekeeper
 CVE-2022-22582|xar|https://research.nccgroup.com/2022/03/15/technical-advisory-apple-macos-xar-arbitrary-file-write-cve-2022-22582/|
 CVE-2022-22616|Safari Downloads|https://jhftss.github.io/CVE-2022-22616-Gatekeeper-Bypass/|
 CVE-2022-22639|SoftwareUpdate|https://www.trendmicro.com/en_us/research/22/d/macos-suhelper-root-privilege-escalation-vulnerability-a-deep-di.html|
+CVE-2022-22655|TCC|https://theevilbit.github.io/posts/cve-2022-22655/|
 CVE-2022-22660|System Preferences|https://rambo.codes/posts/2022-03-15-how-a-macos-bug-could-have-allowed-for-a-serious-phishing-attack-against-users|
 CVE-2022-26696|Terminal|https://wojciechregula.blog/post/macos-sandbox-escape-via-terminal/|
 CVE-2022-26706|LaunchServices|https://www.microsoft.com/security/blog/2022/07/13/uncovering-a-macos-app-sandbox-escape-vulnerability-a-deep-dive-into-cve-2022-26706/|
@@ -111,6 +112,7 @@ CVE-2022-32816|WebKit|https://ssd-disclosure.com/ssd-advisory-apple-safari-idn-u
 CVE-2022-32832|APFS|https://github.com/Muirey03/CVE-2022-32832|
 CVE-2022-32883|Maps|https://github.com/breakpointHQ/CVE-2022-32883|
 CVE-2022-32895|PackageKit|https://www.trendmicro.com/en_us/research/22/k/cve-2019-8561-a-hard-to-banish-packagekit-framework-vulnerabilit.html|
+CVE-2022-32902|ATS|https://jhftss.github.io/CVE-2022-32902-Patch-One-Issue-and-Introduce-Two/|
 CVE-2022-32910|Archive Utility|https://www.jamf.com/blog/jamf-threat-labs-macos-archive-utility-vulnerability/|
 CVE-2022-32929|Backup|https://theevilbit.github.io/posts/cve-2022-32929/|
 CVE-2022-32845&CVE-2022-32899&CVE-2022-32948&CVE-2022-42805|Apple Neural Engine|https://github.com/0x36/weightBufs|
@@ -123,8 +125,17 @@ CVE-2022-42845|Kernel|https://adamdoupe.com/blog/2022/12/13/cve-2022-42845-xnu-u
 CVE-2022-42864|IOHIDFamily|https://muirey03.blogspot.com/2023/01/cve-2022-42864-diabolical-cookies.html|
 CVE-2022-46689|Kernel|https://github.com/zhuowei/MacDirtyCowDemo|
 CVE-2023-23504|Kernel|https://adamdoupe.com/blog/2023/01/23/cve-2023-23504-xnu-heap-underwrite-in-dlil-dot-c/|
+CVE-2023-23525|LaunchServices|https://jhftss.github.io/CVE-2023-23525-Get-Root-via-A-Fake-Installer/|
+CVE-2023-27941&CVE-2023-28200|Kernel|https://github.com/0x3c3e/slides/blob/main/2023/zer0con/README.md|
+CVE-2023-27943|LaunchServices|https://redcanary.com/blog/gatekeeper-bypass-vulnerabilities/|
+CVE-2023-27951|Archive Utility|https://redcanary.com/blog/gatekeeper-bypass-vulnerabilities/|
+CVE-2023-32364|AppSandbox|https://gergelykalman.com/CVE-2023-32364-a-macOS-sandbox-escape-by-mounting.html|
+CVE-2023-32369|libxpc|https://www.microsoft.com/en-us/security/blog/2023/05/30/new-macos-vulnerability-migraine-could-bypass-system-integrity-protection/|
+CVE-2023-32407|Metal|https://gergelykalman.com/lateralus-CVE-2023-32407-a-macos-tcc-bypass.html|
+CVE-2023-32422|SQLite|https://gergelykalman.com/sqlol-CVE-2023-32422-a-macos-tcc-bypass.html|
+CVE-2023-38571|Music|https://gergelykalman.com/CVE-2023-38571-a-macOS-TCC-bypass-in-Music-and-TV.html|
+CVE-2023-41061&CVE-2023-41064|Wallet&ImageIO|https://citizenlab.ca/2023/09/blastpass-nso-group-iphone-zero-click-zero-day-exploit-captured-in-the-wild/|
 multiple|lock screen bypass|https://blog.dinosec.com/2014/09/bypassing-ios-lock-screens.html|
-
 
 <h3 id="p">tools</h3>
 
@@ -151,6 +162,22 @@ static analysis tool for analyzing the security of Apple kernel drivers:
 Coralsun is a small utility cython library used to provide python support for low level kernel features:
 
 [https://github.com/FSecureLABS/coralsun](https://github.com/FSecureLABS/coralsun)
+
+Red Canary Mac Monitor is an advanced, stand-alone system monitoring tool tailor-made for macOS security research:
+
+[https://github.com/redcanaryco/mac-monitor](https://github.com/redcanaryco/mac-monitor)
+
+a set of developer tools that help in analyzing crashes on macOS:
+
+[CrashWrangler](https://developer.apple.com/library/archive/technotes/tn2334/_index.html)
+
+crashwrangler with support for Apple Silicon:
+
+[https://github.com/ant4g0nist/crashwrangler](https://github.com/ant4g0nist/crashwrangler)
+
+Reliable, open-source crash reporting for iOS, macOS and tvOS:
+
+[https://github.com/microsoft/plcrashreporter](https://github.com/microsoft/plcrashreporter)
 
 <h3 id="p">fuzzers</h3>
 
@@ -192,13 +219,25 @@ patch that build WebKitGTK+ with ASAN and make some changes that make fuzzing ea
 
 [https://github.com/googleprojectzero/p0tools/tree/master/WebKitFuzz](https://github.com/googleprojectzero/p0tools/tree/master/WebKitFuzz)
 
+AArch64 fuzzer based on the Apple Silicon hypervisor
+
+[https://github.com/Impalabs/hyperpom](https://github.com/Impalabs/hyperpom)
+
 private:
 
-LLDBFuzzer [Debug for Bug: Crack and Hack Apple Core by Itself](https://documents.trendmicro.com/images/TEx/infographics/Technical%20Brief-Debug%20for%20Bug%20Crack%20and%20Hack%20Apple%20Core%20by%20Itself.pdf)
+fuzz macOS kernel extension
 
-LynxFuzzer [Improving Mac OS X Security Through Gray Box Fuzzing Technique](https://www.researchgate.net/profile/Aristide_Fattori/publication/266657005_Improving_Mac_OS_X_security_through_gray_box_fuzzing_technique/links/57b1aba008ae95f9d8f4abe7/Improving-Mac-OS-X-security-through-gray-box-fuzzing-technique.pdf)
+[KextFuzz: Fuzzing macOS Kernel EXTensions on Apple Silicon via Exploiting Mitigations](https://www.usenix.org/system/files/sec23fall-prepub-425-yin-tingting.pdf)
 
-Port	Syzkaller to	Support	macOS XNU	Fuzzing [Drill Apple Core: Up and Down - Fuzz Apple Core Component in Kernel and User Mode for Fun and Profit](https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Juwei_Lin-Drill-The-Apple-Core.pdf)
+[Improving Mac OS X Security Through Gray Box Fuzzing Technique](https://www.researchgate.net/profile/Aristide_Fattori/publication/266657005_Improving_Mac_OS_X_security_through_gray_box_fuzzing_technique/links/57b1aba008ae95f9d8f4abe7/Improving-Mac-OS-X-security-through-gray-box-fuzzing-technique.pdf)
+
+fuzzer based on LLDB
+
+[Debug for Bug: Crack and Hack Apple Core by Itself](https://documents.trendmicro.com/images/TEx/infographics/Technical%20Brief-Debug%20for%20Bug%20Crack%20and%20Hack%20Apple%20Core%20by%20Itself.pdf)
+
+port syzkaller to macOS
+
+[Drill Apple Core: Up and Down - Fuzz Apple Core Component in Kernel and User Mode for Fun and Profit](https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Juwei_Lin-Drill-The-Apple-Core.pdf)
 
 <h3 id="p">conference</h3>
 
